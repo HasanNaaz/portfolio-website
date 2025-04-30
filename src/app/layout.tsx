@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth"> {/* Add scroll-smooth */}
-      {/* Removed Geist Mono from className */}
+    <html lang="en" className="scroll-smooth">
+      <head>{/* Metadata and links will be injected here */}</head>
       <body className={`${geistSans.variable} antialiased font-sans`}> {/* Use font-sans */}
         {children}
         <Toaster /> {/* Add Toaster component */}
